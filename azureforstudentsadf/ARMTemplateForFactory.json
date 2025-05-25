@@ -456,6 +456,16 @@
 			]
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/linkedServicetoSQL')]",
+			"type": "Microsoft.DataFactory/factories/integrationRuntimes",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"type": "SelfHosted",
+				"typeProperties": {}
+			},
+			"dependsOn": []
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/trigger2')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
@@ -484,16 +494,6 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/pipelines/csvUploadtoJSONonEventTrigger')]"
 			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/linkedServicetoSQL')]",
-			"type": "Microsoft.DataFactory/factories/integrationRuntimes",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"type": "SelfHosted",
-				"typeProperties": {}
-			},
-			"dependsOn": []
 		}
 	]
 }
