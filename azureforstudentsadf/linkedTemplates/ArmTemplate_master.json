@@ -43,6 +43,10 @@
 			"type": "string",
 			"defaultValue": "sa"
 		},
+		"trigger1_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/0e3e4f57-c662-4c6f-935a-70a9f2ec5b43/resourceGroups/azureforstudentsRG/providers/Microsoft.Storage/storageAccounts/stoaccazureforstudent"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -96,6 +100,9 @@
 					},
 					"linkedservicetoSQL_properties_typeProperties_userName": {
 						"value": "[parameters('linkedservicetoSQL_properties_typeProperties_userName')]"
+					},
+					"trigger1_properties_typeProperties_scope": {
+						"value": "[parameters('trigger1_properties_typeProperties_scope')]"
 					}
 				}
 			},
