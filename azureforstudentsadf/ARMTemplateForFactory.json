@@ -216,7 +216,7 @@
 					}
 				],
 				"typeProperties": {
-					"schema": "dbo",
+					"schema": "apps",
 					"table": "employee_csv"
 				}
 			},
