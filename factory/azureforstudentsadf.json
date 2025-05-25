@@ -1,0 +1,9 @@
+{
+	"name": "azureforstudentsadf",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f18fba9c-f0e1-464f-9d6a-51d0df0e2c11",
+		"tenantId": "c53d2bf8-2318-431c-a63e-49fd3bcf5f41"
+	}
+}
