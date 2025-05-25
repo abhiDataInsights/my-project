@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "azureforstudentsadf"
+		},
+		"SqlServer1_password": {
+			"value": ""
+		},
+		"linkedservicetoSQL_password": {
+			"value": ""
+		},
+		"linkedservicetoblob_connectionString": {
+			"value": ""
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"value": "DESKTOP-QOMIVTU\\SQLEXPRESS"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"value": "tempdb"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "sa"
+		},
+		"linkedservicetoSQL_properties_typeProperties_server": {
+			"value": "DESKTOP-QOMIVTU\\SQLEXPRESS"
+		},
+		"linkedservicetoSQL_properties_typeProperties_database": {
+			"value": "tempdb"
+		},
+		"linkedservicetoSQL_properties_typeProperties_userName": {
+			"value": "sa"
+		}
+	}
+}
