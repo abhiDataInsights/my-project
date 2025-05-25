@@ -441,7 +441,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipelines": [
 					{
 						"pipelineReference": {
@@ -463,37 +463,6 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/pipelines/csvUploadtoJSONonEventTrigger')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/trgschedule')]",
-			"type": "Microsoft.DataFactory/factories/triggers",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"runtimeState": "Started",
-				"pipelines": [
-					{
-						"pipelineReference": {
-							"referenceName": "fromCSVtoSQL",
-							"type": "PipelineReference"
-						},
-						"parameters": {}
-					}
-				],
-				"type": "ScheduleTrigger",
-				"typeProperties": {
-					"recurrence": {
-						"frequency": "Minute",
-						"interval": 3,
-						"startTime": "2025-05-25T21:05:00",
-						"endTime": "2025-05-27T21:09:00",
-						"timeZone": "India Standard Time"
-					}
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/fromCSVtoSQL')]"
 			]
 		},
 		{
