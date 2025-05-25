@@ -1,0 +1,6 @@
+{
+	"name": "linkedServicetoSQL",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
