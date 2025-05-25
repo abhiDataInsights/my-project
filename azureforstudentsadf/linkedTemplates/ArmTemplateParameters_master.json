@@ -35,6 +35,9 @@
 		"trigger1_properties_typeProperties_scope": {
 			"value": "/subscriptions/0e3e4f57-c662-4c6f-935a-70a9f2ec5b43/resourceGroups/azureforstudentsRG/providers/Microsoft.Storage/storageAccounts/stoaccazureforstudent"
 		},
+		"trigger2_properties_typeProperties_scope": {
+			"value": "/subscriptions/0e3e4f57-c662-4c6f-935a-70a9f2ec5b43/resourceGroups/azureforstudentsRG/providers/Microsoft.Storage/storageAccounts/stoaccazureforstudent"
+		},
 		"containerUri": {
 			"value": ""
 		},
